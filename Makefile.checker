@@ -1,0 +1,9 @@
+CFLAGS=-Wall -Werror
+
+.PHONY: clean
+
+check16: check16.c timelib.c
+	gcc check16.c timelib.c $(CFLAGS) -o check16
+
+clean:
+	rm -f check16
